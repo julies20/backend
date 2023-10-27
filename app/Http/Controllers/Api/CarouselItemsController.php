@@ -49,7 +49,6 @@ class CarouselItemsController extends Controller
     {
         $carouselItem = CarouselItem::findOrFail($id);
         $carouselItem->delete();
-
         return  $carouselItem;
     }
 }
